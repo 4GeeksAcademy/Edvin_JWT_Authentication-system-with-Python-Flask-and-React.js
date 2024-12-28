@@ -27,12 +27,18 @@ export const Register = () => {
     return(
         <div>
             <form onSubmit={handleSubmit} className="form-control">
+                <h2>Please register</h2>
                 <input type="text" className="form-control" onChange={handleChange} name="email" placeholder="email"/>
                 <input type="password" className="form-control" onChange={handleChange} name="password" placeholder="password"/>
                 <input type="submit" value="register" disabled={localStorage.getItem('token')} />
             </form>
-
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <form onSubmit={handleLogin} className="form-control">
+            <   h2>Please Login</h2>
                 <input type="text" className="form-control" onChange={handleChange} name="email" placeholder="email"/>
                 <input type="password" className="form-control" onChange={handleChange} name="password" placeholder="password"/>
                 <input type="submit" value="login" />

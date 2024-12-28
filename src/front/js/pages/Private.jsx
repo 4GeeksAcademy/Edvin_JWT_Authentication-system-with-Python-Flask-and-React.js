@@ -17,10 +17,19 @@ export const Private = () => {
     }
 
     return (
-        <div>
-            <h2>vista privada</h2>
-            <p>Usuario: {store.user?.email}</p>
-            <button onClick={handleLogout}>Logout</button>
+        <div className="container mt-5 p-4 bg-light shadow rounded">
+        <h2 className="text-center text-primary mb-4">Vista Privada</h2>
+        <p className="text-secondary text-center">
+            <strong>Usuario:</strong> {store.user?.email}
+        </p>
+        <div className="d-flex justify-content-center">
+            <button 
+                onClick={handleLogout} 
+                className="btn btn-danger mt-3 px-4"
+            >
+                Logout
+            </button>
         </div>
+    </div>
     )
 }
